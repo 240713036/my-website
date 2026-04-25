@@ -1,0 +1,327 @@
+/* 各ページ共通
+ * ====================================== */
+
+body {
+    background-color: rgb(219, 219, 219);
+	/*margin: 60px;*/
+	margin: 0;
+}
+
+html{
+	padding: 0 0 50px 0;
+	color: #000000;
+	box-sizing: border-box;
+}
+
+p{
+	letter-spacing: 0.1rem;
+}
+
+#logo {
+    height: 45px;
+    width: auto;
+    margin: 0;
+}
+
+.fixedheader {
+	background-color: rgb(0, 0, 0);
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.indexheader{
+	width: 100%;
+	margin: 150px 0 100px 0;
+	text-align: center;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	text-wrap: nowrap;
+}
+
+nav li a{
+    margin-right: 2rem;
+	top: 50%;
+}
+
+nav li a {
+	color: #ffffff;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+
+nav li a:hover {
+	color: #c4c4c4;
+	border-bottom: none;
+}
+
+.indexnav{
+	display: flex;
+	justify-content: center;
+}
+
+.indexnav li a{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #000000;
+  color: #FFF;
+  border-bottom: solid 5px rgb(180, 180, 180);
+  border-radius: 3px;
+}
+
+nav .current a, .indexnav i:hover{
+	border-bottom: none;
+	text-decoration: none;
+	background: #000000;
+	color: #c4c4c4;
+}
+
+
+
+footer {
+	padding-right: 20px;
+	height: 30px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #000000;
+	color: #deeef3;
+}
+
+#copyright {
+	margin: 0;
+	height: 28px;
+}
+
+/* メインページコンテンツ
+*******************************/
+
+#main{
+	/*margin: 0 100px;*/
+}
+
+#main-visual{
+	width: 100%;
+	margin: 150px 0 100px 0;
+	text-align: center;
+}
+
+#main-visual-img{
+	width: 100%;
+	height: auto;
+	min-width: 200px;
+	max-width: 800px;
+	z-index: 10;
+}
+
+#intro{
+	margin: 50px;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+h3{
+	font-size: 1.5rem;
+}
+
+#intro h2, h3{
+	text-align: center;
+}
+
+#intro p{
+	display: flex;
+	justify-content: center;
+	margin: 50px auto;
+}
+
+#fav h3{
+	margin-top: 100px;
+}
+
+.first{
+	display: inline-block;
+	text-align: center;
+	border: 2px solid #000;
+	width: 2.3rem;
+	height: 2.3rem;
+	font-size: 2rem;
+	padding: 0.1rem;
+	margin-right: 0.2rem;
+	position: relative;
+}
+
+.first::before{
+	content: "";
+	width: 2.5rem;
+	height: 2.5rem;
+	position: absolute;
+	top: 0.3rem;
+	left: 0.3rem;
+	background-color: rgb(212, 205, 140);
+	z-index: -1;
+}
+
+.fav_content{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 10px;
+	background-color: #ffffff;
+}
+
+.credit, .comment{
+	font-size: 0.8em;
+	color: #666;
+	margin-top: 4px;
+}
+.rbox{
+	width: 100%;
+	position: relative;
+}
+
+.r {
+	width: 500px;
+	margin-left: auto;
+	margin-right: max(15%, 50px);
+}
+
+.rbox::after {
+	content: "";
+	position: absolute;
+	top: -70%;
+	right: 0;
+	width: 100%;
+	height: 200%;
+	background-color: rgb(41, 41, 41);
+	z-index: -1;
+	clip-path: polygon(100% 20%, 40% 50%, 100% 100%);
+}
+
+.rbox::before {
+	content: "";
+	position: absolute;
+	top: -90%;
+	right: 0;
+	width: 100%;
+	height: 250%;
+	background-color: rgb(180, 180, 180);
+	z-index: -2;
+	clip-path: polygon(100% 20%, 20% 55%, 100% 95%);
+}
+
+.l {
+	width: 500px;
+	margin-right: auto;
+	margin-left: max(15%, 50px);
+	position: relative;
+}
+
+.lbox{
+	width: 100%;
+	position: relative;
+}
+
+.lbox::after {
+	content: "";
+	position: absolute;
+	top: -65%;
+	right: 0;
+	width: 100%;
+	height: 200%;
+	background-color: rgb(41, 41, 41);
+	z-index: -1;
+
+	clip-path: polygon(60% 50%, 0 0, 0 100%);
+}
+
+.lbox::before {
+	content: "";
+	position: absolute;
+	top: -70%;
+	right: 0;
+	width: 100%;
+	height: 200%;
+	background-color: rgb(180, 180, 180);
+	z-index: -5;
+
+	clip-path: polygon(80% 70%, 0 0, 0 100%);
+}
+
+.game_title, .game_des {
+	text-align: left;
+}
+
+.game_img{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+
+
+/* レスポンシブ対応（スマホ版）
+*******************************/
+@media (max-width:650px) {
+.fav_content{
+	margin: 40px auto;
+	padding: 10px;
+	width: 90%;
+}
+
+.fixedheader {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+#logo{
+	width: 0px;
+}
+
+.fixedheader nav{
+	font-size: small;
+}
+
+.fixedheader li{
+	width: 4rem;
+	text-align: center;
+}
+
+.fixedheader li a{
+	margin: 0 0.5rem;
+}
+
+nav ul {
+	padding: 0;
+	display: flex;
+	list-style-type: none;
+	flex-wrap: wrap; /* ← これを追加 */
+}
+
+nav li {
+	white-space: nowrap; /* ← 各項目は折り返さない */
+}
+
+.indexnav li{
+	margin-bottom: 20px;
+}
+}
