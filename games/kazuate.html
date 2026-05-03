@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>数当てゲーム</title>
+<link rel="stylesheet" href="../default.css">
+<script src="./kazuate.js" type="text/javascript" defer></script>
+</head>
+
+<body id ="kadai">
+<div id="page-kadai">
+
+<!--ヘッダー場所変更-->
+<header class="fixedheader">
+  <a href="../index.html"><img id="logo" src="../img/title_nav.png" alt="ロゴ画像"></a>
+       <nav>
+           <ul>
+            <li><a href="../index.html">ホーム </a></li>
+            <li><a href="../jiko.html">自己紹介 </a></li>
+            <li class><a href="../kadai.html">課題 </a></li>
+            <li><a href="../sonota.html">その他 </a></li>
+           </ul>
+       </nav>
+</header>
+
+
+<div id="main">
+<section class="gamepage_01">
+<p class="kazuate-des">
+  数字を入力すると、ヒントが表示されます。<br>
+  ヒントをもとに数字を絞り込み、正解を目指してください。<br><br>
+  難易度は3種類。<br>
+  かんたんは1から50、ふつうは1から100、むずかしいは1から200の値をとります。
+</p>
+<select id="kazuate-level">
+  <option value="easy">かんたん</option>
+  <option value="normal" selected>ふつう</option>
+  <option value="hard">むずかしい</option>
+</select>
+<input type="text" id="kazuate-input" value=0>
+<button id="ent">Enter</button>
+<p id="kazuate-hint">数字を入力してください</p>
+<p id="kazuate-count">試行回数：0</p>
+</section>
+</div>
+
+<footer>
+  <p id="copyright">
+    <small>&copy; 2026 Tanno Momona</small>
+  </p>
+</footer>
+</div>
+</body>
+</html>
