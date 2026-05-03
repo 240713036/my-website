@@ -131,6 +131,9 @@ footer {
 	z-index: 10;
 }
 
+/* 自己紹介
+*******************************/
+
 #intro{
 	margin: 50px;
 }
@@ -275,8 +278,59 @@ h3{
 	margin: 0 auto;
 }
 
+/* 課題
+*******************************/
+#page_kadai #main{
+	margin-top: 150px;
+}
 
+.assignment_main{
+	text-align: center;
+}
 
+.assignment_grid{
+	margin: 100px 5%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.assignment_card{
+	margin: 10px;
+	padding: 10px;
+	background-color: #ffffff;
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+
+.assignment_card:hover{
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px 5px rgba(255, 247, 0, 0.2);
+}
+
+.assignment_img{
+	width: 100%;
+	height: auto;
+}
+
+.assignment_title{
+	font-size: 1.2rem;
+	text-align: left;
+	text-decoration: none;
+}
+
+.assignment_grid a{
+	text-decoration: none;
+	color: #000;
+	
+}
+
+.assignment_number{
+	font-size: 2rem;
+}
 
 /* レスポンシブ対応（スマホ版）
 *******************************/
