@@ -7,6 +7,7 @@ https://240713036.github.io/my-website/
 - JavaScript  
 
 ## 📁 Structure
+```
 .  
 ├── README.md  
 ├── index.html  
@@ -15,9 +16,10 @@ https://240713036.github.io/my-website/
 ├──kadai.html  
 ├──sonota.html  
 ├──title.png  
-├──games  
-   └──kazuate.jtml  
+└──games  
+   └──kazuate.html  
    └──kazuate.js  
+```
 
 講義で作成・使用するウェブサイトです。  
 レスポンシブデザインは調整中です。  
