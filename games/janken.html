@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>じゃんけんゲーム</title>
+<link rel="stylesheet" href="../default.css">
+<script src="./janken.js" type="text/javascript" defer></script>
+</head>
+
+<body id ="kadai">
+<div id="page-kadai">
+
+<!--ヘッダー場所変更-->
+<header class="fixedheader">
+  <a href="../index.html"><img id="logo" src="../img/title_nav.png" alt="ロゴ画像"></a>
+       <nav>
+           <ul>
+            <li><a href="../index.html">ホーム </a></li>
+            <li><a href="../jiko.html">自己紹介 </a></li>
+            <li><a href="../kadai.html">課題 </a></li>
+            <li><a href="../sonota.html">その他 </a></li>
+           </ul>
+       </nav>
+</header>
+
+<div id="main">
+<section class="gamepage_02">
+<p class="kazuate-des">
+  グー、チョキ、パーのボタンを押すと、自分の手、相手の手、勝敗が表示されます。<br>
+  また、累計の勝利数、敗北数、引き分け数、勝率が表示されます。
+</p>
+<div class="game_02">
+        <h4>じゃんけんゲーム</h4>
+        <div class="buttons">
+            <button id="rock">グー</button>
+            <button id="scissors">チョキ</button>
+            <button id="paper">パー</button>
+        </div>
+        <div id="score">
+            <p>出した手： <span id="playerHand"></span>　相手の手： <span id="cpuHand"></span>　勝敗：<span id="gameResult"></span></p>
+            <p>勝利数: <span id="winCount">0</span></p>
+            <p>敗北数: <span id="lossCount">0</span></p>
+            <p>引き分け数: <span id="drawCount">0</span></p>
+            <p>勝率: <span id="winRate">0%</span></p>
+        </div>
+    </div>
+
+<footer>
+  <p id="copyright">
+    <small>&copy; 2026 Tanno Momona</small>
+  </p>
+</footer>
+</div>
+</body>
+</html>
+
+
+
+
