@@ -280,26 +280,35 @@ h3{
 
 /* 課題
 *******************************/
-#page_kadai #main{
-	margin-top: 150px;
+[class^="gamepage"] {
+	margin-top: 100px;
 }
 
 .assignment_main{
 	text-align: center;
+	margin-top: 100px;
 }
 
 .assignment_grid{
-	margin: 100px 5%;
+	margin: 10%;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
 }
 
 .assignment_card{
-	margin: 10px;
+	display: flex;
+  	flex-direction: column;
 	padding: 10px;
+
 	background-color: #ffffff;
+	border-radius: 8px;
+
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+	transition: all 0.3s ease;
+	overflow:	hidden;
 	border-radius: 3px;
-	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
 	-webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -316,6 +325,13 @@ h3{
 	height: auto;
 }
 
+.assignment_image img{
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 4px;
+}
+
 .assignment_title{
 	font-size: 1.2rem;
 	text-align: left;
@@ -329,6 +345,37 @@ h3{
 
 .assignment_number{
 	font-size: 2rem;
+}
+
+.assignment_description{
+	flex-grow: 1;
+}
+
+/* じゃんけん
+ * ====================================== */
+
+.game_02 {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px auto;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	text-align: center;
+	max-width: 500px;
+}
+.buttons button {
+	padding: 10px 20px;
+	font-size: 1.2em;
+	margin: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+.buttons button:hover {
+	background-color: #e0e0e0;
 }
 
 /* レスポンシブ対応（スマホ版）
