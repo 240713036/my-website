@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=320, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>ダンジョンの自動生成</title>
+<link rel="stylesheet" href="../default.css">
+<script src="./dungeon3.js" type="text/javascript" defer></script>
+</head>
+
+<body id ="dungeon-page">
+<div id="page-kadai">
+
+<!--ヘッダー場所変更-->
+<header class="fixedheader">
+  <a href="../index.html"><img id="logo" src="../img/title_nav.png" alt="ロゴ画像"></a>
+       <nav>
+           <ul>
+            <li><a href="../index.html">ホーム </a></li>
+            <li><a href="../jiko.html">自己紹介 </a></li>
+            <li><a href="../kadai.html">課題 </a></li>
+            <li><a href="../sonota.html">その他 </a></li>
+           </ul>
+       </nav>
+</header>
+
+<div id="main" style="overflow: hidden;">
+<section class="gamepage_05" style="margin-top: 70px;">
+<!--ここにコメントがあれば入れる-->
+</p>
+<div>
+  <!--ここにボタンなどの要素があれば入れる
+  <p>地面</p>
+  <img src="../img/load/chipA.png" onclick="changel('../img/load/chipA.png')">
+  <img src="../img/load/chipB.png" onclick="changel('../img/load/chipB.png')">
+  <img src="../img/load/chipC.png" onclick="changel('../img/load/chipC.png')">
+  <img src="../img/load/chipD.png" onclick="changel('../img/load/chipD.png')">
+  <p>壁</p>
+  <img src="../img/wall/chipA.png" onclick="changew('../img/wall/chipA.png')">
+  <img src="../img/wall/chipB.png" onclick="changew('../img/wall/chipB.png')">
+  <img src="../img/wall/chipC.png" onclick="changew('../img/wall/chipC.png')">
+  <img src="../img/wall/chipD.png" onclick="changew('../img/wall/chipD.png')">
+</div>-->
+<body onload="init()">
+    <canvas id="maze" width="864" height="608"></canvas>
+    <img id ="hero0" src="../img/hero/hero0.png" style="display: none;">
+    <img id ="hero1" src="../img/hero/hero1.png" style="display: none;">
+    <img id ="hero2" src="../img/hero/hero2.png" style="display: none;">
+    <img id ="hero3" src="../img/hero/hero3.png" style="display: none;">
+    <img id ="treasure" src="../img/entity/treasure.png" style="display: none;">
+    <img id ="slime" src="../img/entity/slime.png" style="display: none;">
+    <img id ="ghost" src="../img/entity/ghost.png" style="display: none;">
+</body>
+</section>
+
+<footer>
+  <p id="copyright">
+    <small>&copy; 2026 Tanno Momona</small>
+  </p>
+</footer>
+</div>
+</body>
+</html>
+
+
+
+
+
