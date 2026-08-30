@@ -2,7 +2,18 @@ let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 let hanabis = [];
 let particles = [];
-let colors = ["red", "orange", "yellow", "skyblue", "purple"];
+let colors = [
+    "#ff4040", // 赤
+    "#ff8c00", // オレンジ
+    "#ffd700", // 金色
+    "#ffff80", // 淡い黄色
+    "#00bfff", // 水色
+    "#4169e1", // 青
+    "#9370db", // 紫
+    "#ff69b4", // ピンク
+    "#98fb98", // 黄緑
+    "#ffffff"  // 白
+];
 let timerId = NaN;
 
 function ccl(x, y, r, color){
@@ -74,7 +85,8 @@ class particle{
 }
 
 function tick(){
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
     for(let i = 0; i < hanabis.length; i++){
         hanabis[i].move();
     }
