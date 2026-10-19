@@ -281,7 +281,15 @@ h3{
 /* 課題
 *******************************/
 [class^="gamepage"] {
-	margin-top: 100px;
+}
+
+#kadai{
+	margin-top: 60px;
+}
+
+.kadai_des{
+	width: 80%;
+	margin: 0 auto;
 }
 
 .assignment_main{
@@ -349,6 +357,28 @@ h3{
 
 .assignment_description{
 	flex-grow: 1;
+}
+
+.game-tabs{
+	display: flex;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.game-tabs button{
+	padding: 10px 20px;
+}
+
+.game-frame{
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: block;
+}
+
+.game-window{
+	padding-top: 10px;
+	height: calc(100vh - 150px);
 }
 
 /* じゃんけん
@@ -424,4 +454,11 @@ nav li {
 .indexnav li{
 	margin-bottom: 20px;
 }
+}
+
+/*課題*/
+#maze{
+	width: 900px;
+	height: 600px;
+	touch-action: none;
 }
