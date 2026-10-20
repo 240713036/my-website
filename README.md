@@ -29,11 +29,10 @@ https://240713036.github.io/my-website/
 └──games  
    └──kazuate.html  
    └──kazuate.js
-   └──janken.html  
-   └──janken.js 
 
 ```
 
 ---デザインについて工夫した点  
 -kadai.hemlページは、gridを使用して追加を容易にしました  
 -gridの調整を行いました(2026/05/12)  
+-課題ページにてサンプル、改良版、ＡＩ版を切り替えられるよう更新を行いました(206/10/20)
